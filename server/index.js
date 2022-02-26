@@ -7,7 +7,7 @@ var postMessageRoutes = require("./controllers/postMessageController");
 
 var app = express();
 app.use(bodyParser.json());
-app.use(cors({ origin: "http://localhost:4000" }));
+app.use(cors({ origin: "http://localhost:3000" }));
 
 app.use("/postMessages", postMessageRoutes);
 
